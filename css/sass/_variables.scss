@@ -1,0 +1,49 @@
+/************************************************
+
+Color variables 
+
+************************************************/
+
+$dk-blue:             #22487D;
+$md-blue:             #3076B1;
+$lt-pink:             #F5F1F1;
+
+
+$header--text-color:      $dk-blue;
+$content--bg:             $lt-pink;
+$footer--bg-color:        $dk-blue;
+$footer--text-color:      #fff;
+$link--color:             $dk-blue;
+
+
+/************************************************
+
+Viewport variables
+
+************************************************/
+
+// Mobile: 360 x 640.
+// Mobile: 375 x 667.
+// Mobile: 360 x 720.
+// iPhone X: 375 x 812.
+// Pixel 2: 411 x 731.
+// Tablet: 768 x 1024.
+// Laptop: 1366 x 768.
+// High-res laptop or desktop: 1920 x 1080.
+
+// $viewport--xsmall:      max-width: 
+// $viewport--small:
+// $viewport--medium:
+// $viewport--large:
+// $viewport--xlarge:
+
+
+/************************************************
+
+Helper variables
+
+************************************************/
+
+.center {
+  margin: 0 auto;
+}

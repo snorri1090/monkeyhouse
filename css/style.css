@@ -1,0 +1,315 @@
+/* --------------------------------------------------------------------------
+   Font file import
+   -------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'frutiger-black';
+  src: font-url("/fonts/Frutiger-Black");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-black-cn';
+  src: font-url("/fonts/Frutiger-BlackCn");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-black-italic';
+  src: font-url("/fonts/Frutiger-BlackItalic");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-bold';
+  src: font-url("/fonts/Frutiger-Bold");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-bold-cn';
+  src: font-url("/fonts/Frutiger-BoldCn");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-bold-italic';
+  src: font-url("/fonts/Frutiger-BoldItalic");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-cn';
+  src: font-url("/fonts/Frutiger-Cn");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-extra-black-cn';
+  src: font-url("/fonts/Frutiger-ExtraBlackCn");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-extra-black-cn';
+  src: font-url("/fonts/Frutiger-ExtraBlackCn");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-italic';
+  src: font-url("/fonts/Italic");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-light';
+  src: font-url("/fonts/Frutiger-Light");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-light-cn';
+  src: font-url("/fonts/Frutiger-ExtraLightCn");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-extra-light-italic';
+  src: font-url("/fonts/Frutiger-LightItalic");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger';
+  src: font-url("/fonts/Frutiger-Roman");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'frutiger-ultra-black';
+  src: font-url("/fonts/Frutiger-UltraBlack");
+  font-weight: normal;
+  font-style: normal; }
+/************************************************
+
+Color variables 
+
+************************************************/
+/************************************************
+
+Viewport variables
+
+************************************************/
+/************************************************
+
+Helper variables
+
+************************************************/
+.center {
+  margin: 0 auto; }
+
+body {
+  background-color: #22487D;
+  color: #9c9c9c;
+  font-family: 'frutiger', sans-serif;
+  font-size: 1.2em; }
+
+a,
+p,
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif; }
+
+a {
+  font-size: 1.2em;
+  color: #22487D; }
+  a:visited, a:hover {
+    color: #22487D; }
+
+h1 {
+  font-size: 3em;
+  margin-bottom: -5px; }
+
+p {
+  font-size: 1.2em; }
+
+p a {
+  text-decoration: none; }
+  p a:hover {
+    color: #adadad; }
+
+#page-wrapper {
+  max-width: 1440px;
+  background-color: #fff;
+  margin: 0 auto;
+  min-height: 90vh;
+  padding: 2em;
+  padding-top: 0; }
+
+.em {
+  text-transform: uppercase;
+  font-family: 'frutiger-black', sans-serif; }
+
+/*********************************
+
+HEADER
+
+**********************************/
+#header #top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  #header #top #logo-head {
+    max-width: 300px;
+    float: left; }
+    #header #top #logo-head img {
+      width: 100%; }
+#header #nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  #header #nav-main #logo {
+    max-width: 300px; }
+  #header #nav-main #logo img {
+    width: 100%; }
+
+#nav-main ul {
+  list-style-type: none;
+  align-self: flex-start;
+  padding-inline-start: 0; }
+  #nav-main ul li {
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px; }
+    #nav-main ul li a {
+      font-size: 3em;
+      font-family: 'frutiger-black';
+      font-size: 2.5em;
+      color: #22487D;
+      padding: .5em;
+      text-transform: uppercase; }
+      #nav-main ul li a:hover, #nav-main ul li a.active {
+        background-color: #3076B1;
+        color: white;
+        border-radius: .2em;
+        text-decoration: none; }
+
+a.active {
+  background-color: #3076B1;
+  color: white;
+  border-radius: .2em;
+  text-decoration: none; }
+
+#contact {
+  float: right;
+  width: 300px; }
+
+h2.name {
+  font-family: 'frutiger-black';
+  font-size: 2.5em;
+  color: #22487D;
+  text-align: right; }
+
+h3.title {
+  font-family: 'frutiger-bold';
+  font-size: 1.1em;
+  color: #22487D;
+  text-align: right; }
+
+.links {
+  float: right; }
+  .links a:hover {
+    text-decoration: none; }
+
+img.email-icon,
+img.linkedin-icon {
+  height: 3em;
+  margin: 0 .3em; }
+  img.email-icon:hover,
+  img.linkedin-icon:hover {
+    text-decoration: none; }
+
+/******* end HEADER *************/
+/*********************************
+
+Main Content
+
+**********************************/
+#header .contact {
+  text-align: right; }
+
+main {
+  min-height: 50vh;
+  margin-top: 1em; }
+
+.home-intro {
+  padding: .5em;
+  font-size: 2.5em;
+  text-align: center; }
+
+.home-intro .link {
+  font-size: .5em; }
+
+/*********************************
+
+Portfolio Items
+
+**********************************/
+.folio-thumbs {
+  justify-content: center; }
+
+.folio-tile {
+  width: 250px;
+  background-color: #ccc;
+  border-radius: .3em;
+  min-height: 350px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/*********************************
+
+footer
+
+**********************************/
+footer#footer {
+  background-color: #22487D;
+  max-width: 1440px;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  height: 100px;
+  margin: 0 auto;
+  color: #fff;
+  padding-top: 1em; }
+
+/*********************************
+
+sticky header
+
+**********************************/
+/* Style the navbar */
+#header {
+  overflow: hidden; }
+
+/* Navbar links */
+#header a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 3px;
+  text-decoration: none; }
+
+/* Page content */
+.content {
+  padding: 16px; }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-right: 77px;
+  z-index: 1000;
+  box-shadow: 5px 3px 3px 3px #ccc; }
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/*********************************
+
+Media Queries
+
+**********************************/
+
+/*# sourceMappingURL=style.css.map */
