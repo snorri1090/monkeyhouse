@@ -8,35 +8,22 @@
     font-size: 1.2em;
   }
 
-  input[type="submit"] {
-    padding: .5em;
-    border-radius: .3em;
+  input[type="button"] {
+    padding: 1em;
+    border-radius: .5em;
+    font-size: 1em;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  #input,
+  #output {
+    margin-top: .5em;
   }
 
 </style>
-
-<script>
-  // script should execute on values input
-
-  var input = getElementById("input")
-
-  // isolate x and y coordinates, stripping out other content
-
-
-
-  // divide x,y coordinate by 12
-
-
-
-  // put each grouping of x,y coordinate in format below:
-  // x:y;
-
-
-
-  // output to below text input field
-
-
-</script>
 
 </head>
 
@@ -46,21 +33,58 @@
 
 <p style="text-align: center;">Input coordinates copied from AutoCAD below and press enter:</p>
 
+<hr>
+<h4>Example of coordinates copied from AutoCad</h4>
+<p>
+  at point  X=62112.049  Y=80171.662  Z=    0.000<br>
+  at point  X=62179.931  Y=80103.779  Z=    0.000<br>
+  at point  X=62162.960  Y=80086.808  Z=    0.000<br>
+  at point  X=62095.079  Y=80154.691  Z=    0.000
+</p>
+<br>
+<hr>
+
 
 <form>
 <label>Input Coordinates:</label><br>
-<input type="textarea" id="input" style="width: 300px;min-height: 100px;"><br><br>
+<textarea id="input" rows="5" cols="33" style="min-width:500px;">
+</textarea>
+  <br><br>
 
-<input type="submit" value="Make Map Coordinates"><br><br>
-
-<label>Copy coordinates to input for interactive map</label><br><br>
+<input type="button" value="Make Map Coordinates" onclick="formatCoordinates()"><br><br>
+<br>
+<label>Copy coordinates to input for interactive map</label><br>
 <input type="text" id="output" style="min-width: 500px;padding: 1em;">
 
 </form>
 
-
+<script>
   
+  function formatCoordinates() {
+    const coords = document.getElementById("input").value;
+    const xRegexp = /X=(\d+\.\d+)/g;
+    const xMatches = coords.matchAll(xRegexp);
+    const x = []
+    for (const match of xMatches) {
+      x.push(match[1])
+    }
+
+    const yRegexp = /Y=(\d+\.\d+)/g;
+    const yMatches = coords.matchAll(yRegexp);
+    const y = []
+    for (const match of yMatches) {
+      y.push(match[1])
+    }
+
+    let coordsString = ''
+    x.forEach((element, index) => {
+      coordsString += `${element/12}:${y[index]/12};`
+    })
+
+    document.getElementById("output").value=coordsString;
+  }
+
+</script>
+
 </body>
-
-
 </html>
