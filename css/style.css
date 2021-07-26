@@ -96,220 +96,47 @@ Helper variables
   margin: 0 auto; }
 
 body {
-  background-color: #22487D;
-  color: #9c9c9c;
-  font-family: 'frutiger', sans-serif;
-  font-size: 1.2em; }
+  background-color: #0077B7;
+  color: #fff; }
 
-a,
-p,
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'Montserrat', sans-serif; }
-
-a {
-  font-size: 1.2em;
-  color: #22487D; }
-  a:visited, a:hover {
-    color: #22487D; }
+#ph {
+  text-align: center;
+  margin-top: 10em; }
 
 h1 {
+  font-family: 'Lobster', cursive;
   font-size: 3em;
   margin-bottom: -5px; }
+  h1 a {
+    color: #fff;
+    text-decoration: none; }
+    h1 a:hover {
+      color: #fff;
+      text-decoration: underline; }
 
 p {
-  font-size: 1.2em; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em; }
 
 p a {
-  text-decoration: none; }
-  p a:hover {
-    color: #adadad; }
-
-#page-wrapper {
-  max-width: 1440px;
-  background-color: #fff;
-  margin: 0 auto;
-  min-height: 90vh;
-  padding: 2em;
-  padding-top: 0; }
-
-.em {
-  text-transform: uppercase;
-  font-family: 'frutiger-black', sans-serif; }
-
-/*********************************
-
-HEADER
-
-**********************************/
-#header #top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; }
-  #header #top #logo-head {
-    max-width: 300px;
-    float: left; }
-    #header #top #logo-head img {
-      width: 100%; }
-#header #nav-main {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; }
-  #header #nav-main #logo {
-    max-width: 300px; }
-  #header #nav-main #logo img {
-    width: 100%; }
-
-#nav-main ul {
-  list-style-type: none;
-  align-self: flex-start;
-  padding-inline-start: 0; }
-  #nav-main ul li {
-    float: left;
-    margin-left: 1px;
-    margin-right: 1px; }
-    #nav-main ul li a {
-      font-size: 3em;
-      font-family: 'frutiger-black';
-      font-size: 2.5em;
-      color: #22487D;
-      padding: .5em;
-      text-transform: uppercase; }
-      #nav-main ul li a:hover, #nav-main ul li a.active {
-        background-color: #3076B1;
-        color: white;
-        border-radius: .2em;
-        text-decoration: none; }
-
-a.active {
-  background-color: #3076B1;
-  color: white;
-  border-radius: .2em;
+  color: #CFE6F2 !important;
   text-decoration: none; }
 
-#contact {
-  float: right;
-  width: 300px; }
+p a:hover {
+  color: #adadad !important; }
 
-h2.name {
-  font-family: 'frutiger-black';
-  font-size: 2.5em;
-  color: #22487D;
-  text-align: right; }
-
-h3.title {
-  font-family: 'frutiger-bold';
-  font-size: 1.1em;
-  color: #22487D;
-  text-align: right; }
-
-.links {
-  float: right; }
-  .links a:hover {
-    text-decoration: none; }
-
-img.email-icon,
-img.linkedin-icon {
-  height: 3em;
-  margin: 0 .3em; }
-  img.email-icon:hover,
-  img.linkedin-icon:hover {
-    text-decoration: none; }
-
-/******* end HEADER *************/
-/*********************************
-
-Main Content
-
-**********************************/
-#header .contact {
-  text-align: right; }
-
-main {
-  min-height: 50vh;
-  margin-top: 1em; }
-
-.home-intro {
-  padding: .5em;
-  font-size: 2.5em;
-  text-align: center; }
-
-.home-intro .link {
-  font-size: .5em; }
-
-/*********************************
-
-Portfolio Items
-
-**********************************/
-.folio-thumbs {
-  justify-content: center; }
-
-.folio-tile {
-  width: 250px;
-  background-color: #ccc;
-  border-radius: .3em;
-  min-height: 350px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-/*********************************
-
-footer
-
-**********************************/
-footer#footer {
-  background-color: #22487D;
-  max-width: 1440px;
-  position: relative;
-  bottom: 0;
+#logo {
   text-align: center;
-  height: 100px;
   margin: 0 auto;
-  color: #fff;
-  padding-top: 1em; }
+  margin-bottom: -30px; }
 
-/*********************************
+#logo img {
+  width: 15%; }
 
-sticky header
+/***********************************************
 
-**********************************/
-/* Style the navbar */
-#header {
-  overflow: hidden; }
+Styling from version 1
 
-/* Navbar links */
-#header a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 3px;
-  text-decoration: none; }
-
-/* Page content */
-.content {
-  padding: 16px; }
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding-right: 77px;
-  z-index: 1000;
-  box-shadow: 5px 3px 3px 3px #ccc; }
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-/*********************************
-
-Media Queries
-
-**********************************/
+***********************************************/
 
 /*# sourceMappingURL=style.css.map */
