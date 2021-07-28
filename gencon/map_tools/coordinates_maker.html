@@ -36,10 +36,10 @@
 <hr>
 <h4>Example of coordinates copied from AutoCad</h4>
 <p>
-  at point  X=62112.049  Y=80171.662  Z=    0.000<br>
-  at point  X=62179.931  Y=80103.779  Z=    0.000<br>
-  at point  X=62162.960  Y=80086.808  Z=    0.000<br>
-  at point  X=62095.079  Y=80154.691  Z=    0.000
+  at point  X= 62112.049  Y= 80171.662  Z=    0.000<br>
+  at point  X= 62179.931  Y= 80103.779  Z=    0.000<br>
+  at point  X= 62162.960  Y= 80086.808  Z=    0.000<br>
+  at point  X= 62095.079  Y= 80154.691  Z=    0.000
 </p>
 <br>
 <hr>
@@ -62,14 +62,14 @@
   
   function formatCoordinates() {
     const coords = document.getElementById("input").value;
-    const xRegexp = /X=(\d+\.\d+)/g;
+    const xRegexp = /X= (\d+\.\d+)/g;
     const xMatches = coords.matchAll(xRegexp);
     const x = []
     for (const match of xMatches) {
       x.push(match[1])
     }
 
-    const yRegexp = /Y=(\d+\.\d+)/g;
+    const yRegexp = /Y= (\d+\.\d+)/g;
     const yMatches = coords.matchAll(yRegexp);
     const y = []
     for (const match of yMatches) {
@@ -78,10 +78,10 @@
 
     let coordsString = ''
     x.forEach((element, index) => {
-      coordsString += `${element/12}:${y[index]/12};`
+      coordsString += `${parseFloat(element/12).toFixed(3)}:${parseFloat(y[index]/12).toFixed(3)};`
     })
 
-    document.getElementById("output").value=coordsString;
+    document.getElementById("output").value=coordsString
   }
 
 </script>
