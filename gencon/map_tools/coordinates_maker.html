@@ -55,10 +55,28 @@
 <br>
 <label>Copy coordinates to input for interactive map</label><br>
 <input type="text" id="output" style="min-width: 500px;padding: 1em;">
+<a href="#" id="copy-url">
+  <div class="copy-btn">COPY</div>
+</a>
 
-</form>
+<div id="copy-to-clipboard-success" style="display: none;">
+  Copied to your clipboard!
+</div>
+
 
 <script>
+  // capture "COPY" click
+  copyUrl.addEventListener('click', e => {
+    e.preventDefault();
+    conventionAwareUrl.select();
+    document.execCommand("Copy");
+
+    fadeIn(copySuccess);
+
+    setTimeout(function () {
+      fadeOut(copySuccess);
+    }, 2000);
+  });
   
   function formatCoordinates() {
     const coords = document.getElementById("input").value;
